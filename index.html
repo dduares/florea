@@ -21,7 +21,7 @@
             <h1><a href="index.html"><img
                   src="https://github.com/dduares/portofolio_all-images/blob/main/header&footer_images/logo.png?raw=true"
                   alt="헤더 로고"></a></h1>
-            <nav class="nav" casserole="navigation" aria-label="메인 메뉴">
+            <nav class="nav" role="navigation" aria-label="메인 메뉴">
               <ul>
                 <li><a href="./sub1_Shop.html">Shop</li></a>
                 <li><a href="./sub2_About.html">Our Story</li></a>
@@ -210,6 +210,9 @@
                       </span>
                     </div>
                   </div><!-- swiper-wrapper susito-->
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-scrollbar"></div>
                 </div><!-- .swiper mySwiper-->
                 <div class="swiper mySwiper2">
                   <div class="swiper-wrapper susito2">
@@ -268,6 +271,9 @@
                       </span>
                     </div>
                   </div><!-- swiper-wrapper susito2-->
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-scrollbar"></div>
                 </div><!-- .swiper mySwiper2-->
               </div><!-- .cont3_pic -->
             </div><!-- .cont3_place -->
@@ -467,8 +473,20 @@
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 2,
       spaceBetween: 50,
-
       centeredSlides: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        
+      },
+      scrollbar: {
+        el: ".swiper-scrollbar",
+        clickable: true,
+      },
+       autoplay: {
+         delay: 3000,
+         disableOnInteraction: false,
+       },
       
       
     });
@@ -477,6 +495,19 @@
       slidesPerView: 2,
       spaceBetween: 50,
       centeredSlides: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        
+      },
+      scrollbar: {
+        el: ".swiper-scrollbar",
+        clickable: true,
+      },
+       autoplay: {
+         delay: 3000,
+         disableOnInteraction: false,
+       },
 
     });
     
