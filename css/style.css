@@ -690,7 +690,15 @@ header ul li a:hover {
     border: 0;
 }
 
-
+.cont3_pic .swiper-button-next:after,
+.cont3_pic .swiper-button-prev:after {
+    color: #32441e;
+    --swiper-navigation-size: 50px;
+    z-index: -1 !important;
+}
+.cont3_pic .swiper-scrollbar-drag {
+    background-color: #32441e !important;
+}
 
 
 
