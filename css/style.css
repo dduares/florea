@@ -661,9 +661,7 @@ header ul li a:hover {
     transition: all 0.3s;
     background:rgba(255, 255, 255, 0.5);
     opacity: 0;
-    border: 1px dashed #4b652f;
-    
-        
+    border: 1px dashed #4b652f;    
 }
 .cont3_pic .swiper-slide.swiper-slide-active .img_place.on::after{
     content: "\f560 장바구니에 추가";
