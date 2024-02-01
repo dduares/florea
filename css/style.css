@@ -672,6 +672,49 @@ header ul li a:hover {
     text-shadow: 0px 0px 1px white;
     line-height: 1.6;
 }
+.cont3_pic button{
+    font-size: 1.4vw;
+    opacity: 0;
+    transition: all 0.5s;
+    padding:1%;
+    width: 8vw;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.cont3_pic button:hover{
+    background-color: #b68974;
+    color: whitesmoke;
+
+}
+.cont3_pic button:hover i{
+    color: #fff;
+}
+
+
+.cont3_pic button span{
+    text-align: center;
+    display: block;
+    margin-bottom: 2%;
+}
+.cont3_pic button a {
+    display: block;
+}
+
+.cont3_pic button i{
+    color: #32441e;
+    
+}
+
+
+.cont3_pic button.pay{
+    margin-right: 40px;
+    
+    opacity: 1;
+    
+}
+
+
+
+
 
 .cont3_pic .swiper-slide.swiper-slide-active  .img_place:hover::after{
   opacity: 1;

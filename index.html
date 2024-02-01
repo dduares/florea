@@ -33,8 +33,8 @@
               role="button" tabindex="0">
               <span></span>
             </div>
-            <i class="fa-sharp fa-solid fa-cart-arrow-down" style="color: #3d372f;" title="장바구니"></i>
-            <i class="fa-solid fa-user" style="color: #3d372f;" title="구독자 로그인"></i>
+            <a href="./sub1_Shop.html"><i class="fa-sharp fa-solid fa-cart-arrow-down" style="color: #3d372f;" title="장바구니"></i></a>
+            <a href="./sub4_Contact.html"><i class="fa-solid fa-user" style="color: #3d372f;" title="구독자 로그인"></i></a>
           </div><!-- .row -->
         </div><!-- .container -->
       </header><!-- header -->
@@ -153,6 +153,7 @@
                 </div><!-- .box -->
               </div><!-- .cont3_text -->
               <div class="cont3_pic">
+                <button> <span>결제하기</span><a href="javascript:;"><i class="fa-regular fa-credit-card fa-xl"></i></a></button>
                 <div class="swiper mySwiper">
                   <div class="swiper-wrapper susito">
                     <div class="swiper-slide">
@@ -414,17 +415,25 @@
   <script>
     
     const shop_btn=document.querySelectorAll(".img_place");
+    const pay=document.querySelector(".cont3_pic button");
     
 
     for (let i = 0; i < shop_btn.length; i++) {
       shop_btn[i].addEventListener("click",function(e){
       e.preventDefault();
-      shop_btn[i].classList.toggle("on")
-      
-      })
-      
-    }
+      shop_btn[i].classList.toggle("on");
+          
+      if (shop_btn[i].classList.contains('on')) {
+          pay.classList.add("pay")
+                }
+                else{
+                 pay.classList.remove("pay")
+
+                }
+          });
+    };
     
+   
    
     
 
@@ -483,10 +492,10 @@
         el: ".swiper-scrollbar",
         clickable: true,
       },
-       autoplay: {
-         delay: 3000,
-         disableOnInteraction: false,
-       },
+      //  autoplay: {
+      //    delay: 3000,
+      //    disableOnInteraction: false,
+      //  },
       
       
     });

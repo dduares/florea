@@ -382,7 +382,7 @@
         
     }
     header h1 img{
-        content: url(../images/logo3.png);
+        content: url(https://github.com/dduares/portofolio_all-images/blob/main/main_images/logo3.png?raw=true);
         z-index: 1000;
     }
     header i{    text-indent: 0;

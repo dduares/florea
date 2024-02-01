@@ -122,6 +122,8 @@
                             <li><a href=".bouquet">꽃다발</a></li>
                             <li><a href=".vase">꽃화병</a></li>
                             <li><a href=".box">박스</a></li>
+                            <button> <span>결제하기</span><a href="javascript:;"><i class="fa-regular fa-credit-card fa-xl"></i></a></button>
+                <div class="swiper mySwiper">
                         </ul>
                         <section>
                             <article class="bouquet">
@@ -675,11 +677,19 @@
 
 
     const shop_btn=document.querySelectorAll("main section article div");
+    const pay=document.querySelector(".contents4 button");
     
     for (let i = 0; i < shop_btn.length; i++) {
       shop_btn[i].addEventListener("click",function(e){
       e.preventDefault();
       shop_btn[i].classList.toggle("on")
+      if (shop_btn[i].classList.contains('on')) {
+          pay.classList.add("pay")
+                }
+                else{
+                 pay.classList.remove("pay")
+
+                }
       
       })
       

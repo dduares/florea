@@ -301,6 +301,43 @@ header ul li a:hover {
     text-align: center;
     font-weight: 600;
 }
+.contents4 button{
+    font-size: 1vw;
+    opacity: 0;
+    transition: all 0.5s;
+    width: 6vw;
+    background-color: rgba(255, 255, 255, 0.5);
+    
+}
+.contents4 button span{
+    text-align: center;
+    display: block;
+    margin-bottom: 2%;
+}
+.contents4 button a {
+    display: block;
+}
+.contents4 button:hover{
+    background-color: #b68974;
+    color: whitesmoke;
+
+}
+.contents4 button:hover i{
+    color: #fff;
+}
+.contents4 button i{
+    color: #32441e;
+    
+}
+
+
+.contents4 button.pay{
+    margin-right: 40px;
+    
+    opacity: 1;
+    
+}
+
 .contents4 main{    
 }
 .contents4 main ul{
