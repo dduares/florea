@@ -1,14 +1,33 @@
 @charset "utf-8";
-
-@media(max-width:1700px){
+@media(max-width:1920px){
     .container{width: 100%; height: 100%;overflow: hidden;}
     .row{width: 100%; height: 100%;overflow: hidden;}
-    .contents5{height: 155vh;}
+}
+
+@media(max-width:1700px){
+    .contents5{
+        height: auto;
+    }
+    .contents5 .cont5_text ul{
+        margin-bottom: 1%;
+    }
+    .show > div > img{
+        padding: 1.5%;
+    }
+    .contents5 .cont5_img .img_bottom{
+        margin-bottom: 2.5%;
+    }
+    .contents6{
+        height: auto;
+    }
+    footer{
+        height: auto;
+        padding: 4%;
+    }
+
 }
 
 @media(max-width:1600px){
-    
-
     header a{
         display: flex;
         align-items: center;
@@ -20,9 +39,6 @@
 
     header ul li a{
         font-size: 22px;
-    }
-    .contents5 {
-        height: 140vh;
     }
 }
 
@@ -37,15 +53,10 @@
     .cont3_place{
         height: 75vh;
     }
-    .contents5 {
-        height: 135vh;
-    }
 }
 
 @media(max-width:1400px){
-    header{
-        height: 15vh;
-    }
+    
     header h1 a{
         height: 100%;
     } 
@@ -55,11 +66,17 @@
     header ul{
         padding-bottom: 4%;
     }
-
-    .contents1{
-        background-size: cover;
-        height: 54vh;
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
     }
+
+    
     .contents1 .cont1_text .cont1_text_tit{
         font-size: 40px;
     }
@@ -87,31 +104,16 @@
         font-size: 40px;
     }
     
-    .contents5 {
-        height: 128vh;
-    }
 
-    .contents6{
-        height: 45vh;
-    }
+    
     .contents6 .email_place .text_top{
         align-items: center;
     }
-    .contents6 .email_place .text_bottom{
-        margin-top: 4%;
-        height: 50%;
-    }
+    
 }
 
 @media(max-width:1300px){
-    .contents5 {
-        height: 120vh;
-    }
-   
     
-    footer{
-        height: 35vh;
-    }
     footer .footer_left .footer_menu{margin-left: 0;}
 }
 
@@ -120,14 +122,13 @@
         height: 65vw;
     }
     .contents4 {
-        height: 55vh;
+        height: auto;
     }
     .contents4 .cont4_banner{
-        height: 30vh;
+        height: 150px;
+        margin-bottom: 10%;
     }
-    .contents5 {
-        height: 115vh;
-    }
+    
     .cont3_place .cont3_text .box .tit strong{
         font-size: 35px;
     }
@@ -152,16 +153,7 @@
     .cont3_pic .swiper-slide.swiper-slide-active  .img_place:hover::after{
       font-size: 16px;
     }
-    
-    .contents5 {
-        height: 105vh;
-    }
-    .contents6{
-        height: 40vh;
-    }
-    .contents6 .email_place .text_top {
-        height: 20vh;
-    }
+
     .contents6 .email_place .text_bottom .email_box, .contents6 .email_place .text_bottom .send_btn{
         font-size: 12px;
     }
@@ -215,21 +207,14 @@
       font-size: 14px;
     }
     
-    .contents4{
-        height: 45vh;
-    }
-    .contents4 .cont4_banner {
-        height: 20vh;
-    }
+    
     .contents4 .cont4_text p em{
         font-size: 15px;
     }
     .contents4 .cont4_text p span{
         font-size: 32px;
     }
-    .contents5{
-        height: 98vh;
-    }
+    
     footer .footer_left .footer_logo_sns .f_sns ul li{
         padding: 4%;
         margin-top: 2%;
@@ -287,6 +272,7 @@
     .cont2_place .box span .box_desc{
         display: none;
     }
+  
     .cont3_place{
         display: block;
         height: auto;
@@ -320,18 +306,9 @@
         width: 80%;
         margin: 0 auto;
     }
-    .cont3_pic>.swiper{
-        height: 55vh !important;
-    }
-    .contents5{
-        height: 88vh;
-    }
-    .contents6{
-        height: 25vh;
-    }
-    .contents6 .email_place .text_top {
-        height: 15vh;
-    }
+    
+    
+    
     .contents6 .email_place .text_top p{
         font-size: 25px;
     }
@@ -346,9 +323,7 @@
         line-height: 30px;
     }
     
-    footer{
-        height: 15vh;
-    }
+    
     footer .footer_left .footer_logo_sns .f_logo img{
         width: 60%;
     }
@@ -378,8 +353,6 @@
         background-color: rgb(255, 255, 255, 0.8);
         backdrop-filter: blur(15px);
         position: fixed;
-        height: 6vh;
-        
     }
     header h1 img{
         content: url(https://github.com/dduares/portofolio_all-images/blob/main/main_images/logo3.png?raw=true);
@@ -397,10 +370,10 @@
         position: absolute;
         flex-direction: column;
         left: 0;
-        top: 6vh;
+        top: 0;
         background-color: #eae1da;
         padding: 0;
-        height: 94vh;
+        height: 100vh;
         opacity: 1;
     }
     .nav.show  ul li{
@@ -423,9 +396,7 @@
     .slider .swiper-slide{
         height: 70vw;
     }
-    .contents1{
-        height: 38vh;
-    }
+    
     .contents1 .cont1_text .cont1_text_desc_place p{
         font-size: 15px;
     }
@@ -450,12 +421,8 @@
     .cont2_place .box span .box_desc{
         font-size: 12px;
     }
-    .contents4 {
-        height: 40vh;
-    }
-    .contents5 {
-        height: 78vh;
-    }
+    
+
     .contents5 .cont5_text span em{
         font-size: 24px;
     }
@@ -470,13 +437,8 @@
     --swiper-navigation-size: 40px;}
 }
 
-@media(max-width:750px){
-    .contents5{
-        height: 75vh;
-    }
-}
+@media(max-width:750px){}
 @media(max-width:700px){
-    
     header ul li a{
         font-size: 18px;
     }
@@ -501,11 +463,10 @@
     .cont3_pic .swiper-slide.swiper-slide-active  .img_place:hover::after{
       font-size: 13px;
     }
-    .contents5{
-        height: 68vh;
-    }
+    
     .contents6 .email_place .text_top span{
         text-align: center;
+        width: 70%;
     }
     footer .footer_left .footer_logo_sns{
         width: 70%;
@@ -553,35 +514,25 @@
     .cont3_pic .swiper-slide.swiper-slide-active  .img_place:hover::after{
       font-size: 12px;
     }
-    .contents4{
-        height: 28vh;
-    }
+    
     .contents4 .cont4_text p span{
         font-size: 28px;
     }
-    .contents4 .cont4_banner{
-        height: 12vh;
-    }
-    .contents5{
-        height: 60vh;
-    }
-    .contents6{
-        height: 20vh;
-    }
-    .contents6 .email_place .text_top{
-        height: 12vh;
+    .contents6 .email_place .text_top p{
+        font-size: 20px;
     }
     .contents6 .email_place .text_top span{
-        width: 90%;
+        
         font-size: 13px;
     }
     footer .footer_right{
-        font-size: 13px;
+        font-size: 12px;
     }
     .swiper-button-next:after,
     .swiper-button-prev:after {
     --swiper-navigation-size: 30px;
     }
+    
 }
 @media(max-width:500px){
     header h1{
@@ -610,9 +561,6 @@
         font-size: 12px;
         width: 80%;
     }
-    .contents1{
-        height: 30vh;
-    }
     .contents1 .cont1_banner .cont1_banner_tit{
         font-size: 20px;
     }
@@ -627,20 +575,16 @@
       font-size: 11px;
     }
     
-    .contents5{
-        height: 50vh;
-    }
+    
     .contents5 .cont5_text ul li a{
         font-size: 16px;
     }
-    .contents6 .email_place .text_top span{
-        font-size: 14px;
-    }
+    
     footer .footer_left .footer_logo_sns{
         width: 100%;
     }
     footer .footer_left .footer_menu{
-        font-size: 8px;
+        font-size: 6px;
     }
     footer .footer_right .footer_nav_left a{
         padding-left: 25%;
@@ -694,21 +638,15 @@
     .cont3_pic .swiper-slide{
         font-size: 11px;
     }
-    .cont3_pic>.swiper{
-        height: 30vh !important;
-    }
-    .contents4 {
-        height: 22vh;
-    }
+    
+   
     .contents4 .cont4_text p em{
         font-size: 12px;
     }
     .contents4 .cont4_text p span{
         font-size: 24px;
     }
-    .contents4 .cont4_banner {
-        height: 10vh;
-    }
+  
     .contents5 .cont5_text span em{
         font-size: 20px;
     }
@@ -718,15 +656,8 @@
     .contents5 .cont5_text ul li a{
         font-size: 13px;
     }
-    .contents5 {
-        height: 42vh;
-    }
-    .contents6{
-        height: 10vh;
-    }
-    .contents6 .email_place .text_top{
-        height: 6vh;
-    }
+    
+    
     .contents6 .email_place .text_top p{
         font-size: 13px;
         

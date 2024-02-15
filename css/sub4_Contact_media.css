@@ -1,8 +1,17 @@
 @charset "utf-8";
 
-@media(max-width:1700px){ 
+@media(max-width:19200px){ 
     .container{width: 100%; height: 100%;overflow: hidden;}
     .row{width: 100%; height: 100%;overflow: hidden;}
+}
+@media(max-width:1700px){ 
+    .contents1{
+        height: auto;
+    }
+    footer{
+        height: auto;
+        padding: 4%;
+    }
 }
 
 @media(max-width:1600px){
@@ -13,12 +22,15 @@
         align-items: center;
         justify-content: center;
     }
+    header a img{
+        width: 90%;
+    }
    
     header ul li a{
         font-size: 22px;
     }
     #login_wrap{
-        height: 50%;
+        height: 55%;
         top: 22%;
         left: 18%;
     }
@@ -27,29 +39,37 @@
     }
 }
 
-@media(max-width:1500px){}
+@media(max-width:1500px){
+    #login_wrap .login_footer{
+        position: absolute;
+        bottom: 10%;
+        right: 10%;
+    }
+}
 
 @media(max-width:1400px){
-    header{
-        height: 10vh;
-    }
+    
     header h1 a{
         height: 100%;
     } 
     header h1 a img{
-        width: 60%;
+        width: 85%;
     }
     header ul li a{
         font-size: 18px;
     }
     #login_wrap{
         width: 30%;
+        height: 65%;
         left: 10%;
     }
   
 }
 
-@media(max-width:1300px){}
+@media(max-width:1300px){
+    footer .footer_left .footer_menu{margin-left: 0;}
+
+}
 
 @media(max-width:1200px){
     #login_wrap{
@@ -85,20 +105,18 @@
     .contents1 .contents1_background img{
         content: url(https://github.com/dduares/portofolio_all-images/blob/main/sub4_Contact_images/paper3.png?raw=true);
     }
-    
-
-    
-
+    #login_wrap{
+        height: 50%;
+    }
     footer .footer_left .footer_logo_sns .f_sns ul li{
         padding: 4%;
         margin-top: 2%;
     }
+    
 }
 @media(max-width:900px){
    
-    footer{
-        height: 15vh;
-    }
+    
     footer .footer_left .footer_logo_sns .f_logo img{
         width: 60%;
     }
@@ -126,7 +144,7 @@
     header{
         background-color: rgb(255, 255, 255, 0.8);
         backdrop-filter: blur(15px);
-        height: 6vh;
+        
         width: 100%; 
         position: relative;
     }
@@ -144,12 +162,11 @@
         position: absolute;
         flex-direction: column;
         left: 0;
-        top: 6vh;
+        top: 0;
         background-color: #eae1da;
         padding: 0;
-        height: 85vh;
+        height: 120vh;
         opacity: 1;
-        z-index: 100;        
     }
     .nav.show  ul li{
         display: block;
@@ -170,7 +187,8 @@
     .header_nav_mobile{display: block;}
 
     .contents1{
-        padding: 4% 7%;
+        padding: 10% 7%;
+        height: 800px;
     }
     .contents1 .contents1_background img{
         content: url(https://github.com/dduares/portofolio_all-images/blob/main/sub4_Contact_images/paper.jpg?raw=true);
@@ -210,6 +228,7 @@
         height: 34%;
         top: 12%;
         padding: 2% 2%;
+        
     }
     #login_wrap .login_header{
         font-size: 10px;
@@ -240,7 +259,7 @@
         right: 5%;
     }
     .contents1 .contents1_background .map iframe{
-        height: 22vh;
+        height: 150px;
     }
     
 }
@@ -249,9 +268,7 @@
         font-size: 18px;
     }
    
-    footer{
-        height: 13vh;
-    }
+    
     footer .footer_left .footer_logo_sns{
         width: 60%;
     }
@@ -264,9 +281,7 @@
     }
 }
 @media(max-width:600px){
-    header{
-        height: 4vh;
-    }
+    
     header i{
         font-size: 18px;
         right: 9.5%;
@@ -277,10 +292,7 @@
     header ul li a{
         font-size: 15px;
     }
-    .header_nav_mobile{
-        right: 2px;
-        top: 2vh;
-    }
+    
     .header_nav_mobile span{
         width: 30px;
     }
@@ -290,19 +302,13 @@
     .header_nav_mobile span::after{
         width: 30px;
     }
-    .nav.show ul {
-        top: 4vh;
-        height: 100vh;
-    }
+    
 
     #login_wrap .login_footer{
        display: none;
     }
     #login_wrap .login_content .lc_btn{
         bottom: 20%;
-    }
-    footer .footer_right{
-        font-size: 13px;
     }
 }
 @media(max-width:500px){

@@ -43,12 +43,12 @@ body {
     height: 100%;
 }
 
-
 header {
-    position: absolute;
-    width: 100%;
-    height: 20vh;
-    z-index: 100;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: 100;
+  padding: 10px 0;
 }
 
 header h1 {
@@ -111,15 +111,15 @@ header ul li a:hover {
     color: #b4977c;
     text-decoration: underline;
 }
-.header_nav_mobile{
-    display: none;
-    width: 40px;
-    height: 20px;
-    cursor: pointer;
-    position: fixed;
-    top: 3vh;
-    right: 2vw;
-    z-index: 100000;
+.header_nav_mobile {
+  display: none;
+  width: 40px;
+  height: 20px;
+  cursor: pointer;
+  position: fixed;
+  top: 50%;
+  right: 6px;
+  z-index: 100000;
 }
 .header_nav_mobile span{
     display: block;
@@ -151,7 +151,7 @@ header ul li a:hover {
 
 /* .contents1 */
 .contents1{
-  height: 25vw;
+  height: 35vw;
   background-image: url(https://github.com/dduares/portofolio_all-images/blob/main/sub1_Shop_images/cont1-background.png?raw=true);
   background-position: center center;
   background-size: cover;
@@ -193,28 +193,27 @@ header ul li a:hover {
   overflow: hidden;
   position: sticky;
   top: 1px;
-  height: 140vh;
+  
 }
 .swiper-container {
-  height: 100vh;
   padding-left: 10%;
   padding-bottom: 27%;
   position: relative;
+  height: 100vh;
 }
 
 .contents4 .swiper-container {
   background-image: linear-gradient(180deg, #fff, #9ea546, #fff);
-  
 }
 
 .swiper-slide {
   width: 300px;
-  height: 300px;
+  height: 200px;
   opacity: 1;
 }
 .swiper-slide img{
-  width: 52vw;
-  height: 41vw;
+  width: 900px;
+  height: 600px;
   border-radius: 15px;
 }
 
@@ -321,49 +320,52 @@ header ul li a:hover {
 }
 
 /* footer */
-footer{
+footer {
   width: 100%;
   height: 40vh;
-  background: linear-gradient( #fff ,#5b5b50);
+  background: linear-gradient(#fff, #5b5b50);
   overflow: hidden;
-  position: absolute;
-  
-  
 }
-footer .footer_left{
+
+footer .footer_left {
   width: 60%;
   height: 100%;
   float: left;
   display: flex;
 }
-footer .footer_left .footer_logo_sns{
+
+footer .footer_left .footer_logo_sns {
   width: 30%;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
-  
+
+
 }
-footer .footer_left .footer_logo_sns .f_logo a{ 
+
+footer .footer_left .footer_logo_sns .f_logo a {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-footer .footer_left .footer_logo_sns .f_logo img{   
+
+footer .footer_left .footer_logo_sns .f_logo img {
   filter: invert();
 }
 
-footer .footer_left .footer_logo_sns .f_sns{}
-footer .footer_left .footer_logo_sns .f_sns ul{
+footer .footer_left .footer_logo_sns .f_sns {}
+
+footer .footer_left .footer_logo_sns .f_sns ul {
   overflow: hidden;
   width: 10.416666666666666vw;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-footer .footer_left .footer_logo_sns .f_sns ul li{
+
+footer .footer_left .footer_logo_sns .f_sns ul li {
   padding: 7%;
 }
 
@@ -371,14 +373,15 @@ footer .footer_left .footer_logo_sns .f_sns ul li{
 
 
 
-footer .footer_left .footer_logo_sns .f_sns ul li a img{
+footer .footer_left .footer_logo_sns .f_sns ul li a img {
   transition: all 0.5s;
 }
-footer .footer_left .footer_logo_sns .f_sns ul li a img:hover{
-filter: invert();
+
+footer .footer_left .footer_logo_sns .f_sns ul li a img:hover {
+  filter: invert();
 }
 
-footer .footer_left .footer_menu{
+footer .footer_left .footer_menu {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -389,43 +392,41 @@ footer .footer_left .footer_menu{
   line-height: 3.5;
 }
 
-footer .footer_right{
+footer .footer_right {
   width: 40%;
-  
-  height: 100%;
   font-size: 24px;
   font-weight: 600;
   float: left;
   display: flex;
-  
- align-items: center;
- justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
-footer .footer_right .footer_nav_left{
+footer .footer_right .footer_nav_left {
   display: flex;
   flex-direction: column;
   width: 50%;
   justify-content: center;
 }
-footer .footer_right .footer_nav_left a{
+
+footer .footer_right .footer_nav_left a {
   padding-left: 50%;
   margin: 4% 0;
 }
 
-footer .footer_right .footer_nav_right{
+footer .footer_right .footer_nav_right {
   display: flex;
   flex-direction: column;
   width: 50%;
   justify-content: left;
 }
 
-footer .footer_right .footer_nav_right a{
+footer .footer_right .footer_nav_right a {
   padding-left: 30%;
   margin: 4% 0;
 }
-footer .footer_right .footer_nav_left a:hover, footer .footer_right .footer_nav_right a:hover{
-  
+
+footer .footer_right .footer_nav_left a:hover,
+footer .footer_right .footer_nav_right a:hover {
   text-decoration: underline;
 }
-

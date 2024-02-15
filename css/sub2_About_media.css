@@ -1,9 +1,15 @@
 @charset "utf-8";
 
-@media(max-width:1700px){ 
+@media(max-width:1920px){ 
     .container{width: 100%; height: 100%;overflow: hidden;}
     .row{width: 100%; height: 100%;overflow: hidden;}
     
+}
+@media(max-width:1700px){ 
+    footer{
+        height: auto;
+        padding: 4%;
+    }
 }
 
 @media(max-width:1600px){
@@ -42,9 +48,7 @@
 }
 
 @media(max-width:1400px){
-    header{
-        height: 15vh;
-    }
+    
     header h1 a{
         height: 100%;
     } 
@@ -69,9 +73,7 @@
         margin-top: 5%;
     }
 
-    .cont3_intro2{
-        height: 40vh;
-    }
+    
     .cont3_intro2 .cont3_place .cont3_place_right ul li{
         margin: 1%;
         column-gap: 4%;
@@ -102,9 +104,7 @@
     .accordion .accordion_content p{
         font-size: 1.2vw;
     }
-    footer{
-        height: 35vh;
-    }
+    
     footer .footer_left .footer_menu{margin-left: 0;}
 }
 
@@ -186,9 +186,7 @@
         font-size: 14px;
     }
 
-    .cont3_intro2{
-        height: 35vh;
-    }
+    
     .cont3_intro2 .cont3_place .cont3_place_right ul li .number{
         font-size: 25px;
     }
@@ -224,9 +222,7 @@
         width: 1px;
     }
     
-    footer{
-        height: 15vh;
-    }
+    
     footer .footer_left .footer_logo_sns .f_logo img{
         width: 60%;
     }
@@ -255,15 +251,12 @@
         background-color: rgb(255, 255, 255, 0.8);
         backdrop-filter: blur(15px);
         position: fixed;
-        height: 6vh;
-        
     }
     header h1 img{
         content: url(https://github.com/dduares/portofolio_all-images/blob/main/main_images/logo3.png?raw=true);
         z-index: 1000;
     }
-    header i{    text-indent: 0;
-    }
+    header i{text-indent: 0;}
     .nav{
         display: none;   
     }
@@ -273,10 +266,10 @@
         position: absolute;
         flex-direction: column;
         left: 0;
-        top: 6vh;
+        top: 0;
         background-color: #eae1da;
         padding: 0;
-        height: 94vh;
+        height: 100vh;
         opacity: 1;
     }
     .nav.show  ul li{
@@ -327,7 +320,8 @@
     }
 
     .cont3_intro2{
-        height: 40vh;
+        height: auto;
+        padding: 4%;
     }
     .cont3_intro2 .cont3_place{
         flex-direction: column;
@@ -411,12 +405,14 @@
     .cont2_intro .cont2_place .cont2_place_right iframe{
         margin-top: 0;
     }
+
     .cont3_intro2 .cont3_place .cont3_place_left p{
         width: 17vw;
     }
     .cont3_intro2 .cont3_place .cont3_place_right ul{
         padding: 0 3%;    
     }
+    
     .accordion .accordion_item{
         width: 80%;
         margin: 0 auto;
@@ -447,7 +443,7 @@
     
 
     footer .footer_right{
-        font-size: 13px;
+        font-size: 12px;
     }
 }
 
@@ -481,7 +477,7 @@
         width: 100%;
     }
     footer .footer_left .footer_menu{
-        font-size: 8px;
+        font-size: 6px;
     }
     footer .footer_right .footer_nav_left a{
         padding-left: 25%;
