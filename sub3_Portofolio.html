@@ -166,47 +166,35 @@
     </div><!-- #wrap -->
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./script/JavaScript(sub3_Portofolio).js"></script>
 
     <script>
       // swiper
-      var swiper = new Swiper('.swiper-container',{
-    effect: 'coverflow',
-    direction: 'vertical',
-    loop: false,
-    slideToClickedSlide: true,
-    centeredSlides: true,
-    slidesPerView: 'auto',
-    coverflowEffect: {
-      rotate: -5,
-      stretch: 250,
-      depth: 100,
-      modifier: 1,
-      slideShadows: false,
-      loop : true, // 무한 반복
-    },
-    navigation : { // 네비게이션 설정
-      nextEl : '.swiper-button-next', // 다음 버튼 클래스명
-      prevEl : '.swiper-button-prev', // 이번 버튼 클래스명
-    },
-      pagination : { // 페이징 설정
-      el : '.swiper-pagination',
-    },
-    freeMode:false,
-    freeModeSticky:true
-  });
-
-
-  const headerToggle=document.getElementById("headerToggle");
-        const headerNav=document.querySelector(".nav");
-
-        headerToggle.addEventListener("click",function(e){
-            e.preventDefault();
-            headerNav.classList.toggle("show");
-            headerToggle.getAttribute("aria-expanded")==="true"?
-            headerToggle.setAttribute("aria-expanded","false"):
-            headerToggle.setAttribute("aria-expanded","true");
-        });
- 
+      var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        direction: 'vertical',
+        loop: false,
+        slideToClickedSlide: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+          rotate: -5,
+          stretch: 250,
+          depth: 100,
+          modifier: 1,
+          slideShadows: false,
+          loop: true, // 무한 반복
+        },
+        navigation: { // 네비게이션 설정
+          nextEl: '.swiper-button-next', // 다음 버튼 클래스명
+          prevEl: '.swiper-button-prev', // 이번 버튼 클래스명
+        },
+        pagination: { // 페이징 설정
+          el: '.swiper-pagination',
+        },
+        freeMode: false,
+        freeModeSticky: true
+      });
     </script>
 </body>
 </html>
