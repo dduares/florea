@@ -677,7 +677,6 @@ header ul li a:hover {
     font-size: 20px;
     color: #3d372f;
     text-shadow: 0px 0px 1px white;
-    line-height: 1.6;
 }
 
 .cont3_pic button {
@@ -690,8 +689,8 @@ header ul li a:hover {
 }
 
 .cont3_pic button:hover {
-    background-color: #b68974;
-    color: whitesmoke;
+    background-color: #f0d2c4;
+    font-weight: bold;
 
 }
 
@@ -732,6 +731,7 @@ header ul li a:hover {
     font-size: 20px;
     color: #3d372f;
     text-shadow: 0px 0px 1px white;
+    line-height: 2.5;
 
 }
 

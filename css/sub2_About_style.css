@@ -147,7 +147,9 @@ header ul li a:hover {
 
 /* CONTENTS1 */
 
-.cont1_about{}
+.cont1_about{
+    width: 100vw;
+}
 
 .cont1_about .cont1_background{
     position: relative;

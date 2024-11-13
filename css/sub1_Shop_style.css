@@ -323,8 +323,9 @@ header ul li a:hover {
     display: block;
 }
 .contents4 button:hover{
-    background-color: #b68974;
-    color: whitesmoke;
+    background-color: #f0d2c4;
+    font-weight: bold;
+
 
 }
 .contents4 button:hover i{
@@ -337,10 +338,8 @@ header ul li a:hover {
 
 
 .contents4 button.pay{
-    margin-right: 40px;
-    
+    margin-left: 40px;
     opacity: 1;
-    
 }
 
 .contents4 main{    
@@ -408,6 +407,7 @@ header ul li a:hover {
   font-size: 1vw;
   color: #3d372f;
   text-shadow: 0px 0px 1px white;
+
 }
 
 
