@@ -306,41 +306,7 @@ header ul li a:hover {
     text-align: center;
     font-weight: 600;
 }
-.contents4 button{
-    font-size: 1vw;
-    opacity: 0;
-    transition: all 0.5s;
-    width: 6vw;
-    background-color: rgba(255, 255, 255, 0.5);
-    
-}
-.contents4 button span{
-    text-align: center;
-    display: block;
-    margin-bottom: 2%;
-}
-.contents4 button a {
-    display: block;
-}
-.contents4 button:hover{
-    background-color: #f0d2c4;
-    font-weight: bold;
 
-
-}
-.contents4 button:hover i{
-    color: #fff;
-}
-.contents4 button i{
-    color: #32441e;
-    
-}
-
-
-.contents4 button.pay{
-    margin-left: 40px;
-    opacity: 1;
-}
 
 .contents4 main{    
 }
@@ -376,7 +342,7 @@ header ul li a:hover {
 
 
 .contents4 main section article div::after{
-    content: "\f218   장바구니에 추가";
+    content: "\f218   장바구니";
     font: var(--fa-font-solid );
     display: flex;
     align-items: end;
@@ -393,13 +359,13 @@ header ul li a:hover {
     border: 1px dashed #4b652f;    
 }
 .contents4 main section article  div.on::after{
-    content: "\f560 장바구니에 추가";
+    content: "\f560 장바구니";
     font: var(--fa-font-solid );
     opacity: 1;
     font-size: 1vw;
     color: #3d372f;
     text-shadow: 0px 0px 1px white;
-    line-height: 1.6;
+    line-height: 2.6;
 }
 
 .contents4 main section article div:hover::after{
